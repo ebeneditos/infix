@@ -1,6 +1,6 @@
 #' @name infix
 #' @docType package
-#' @title Infix Binary Operators
+#' @title Basic infix binary operators
 #' @description Contains a number of infix binary operators that may be useful
 #'     in day to day practices.
 #' @section Operators: \describe{
