@@ -1,0 +1,22 @@
+language: r
+sudo: false
+cache: packages
+warnings_are_errors: false
+
+r:
+ - oldrel
+ - release
+ - devel
+ 
+branches:
+  only:
+    - master
+
+r_github_packages:
+  - ebeneditos/infix
+  
+r_packages:
+  - covr
+
+after_success:
+  - Rscript -e 'covr::codecov()'
