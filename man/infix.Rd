@@ -4,7 +4,7 @@
 \name{infix}
 \alias{infix}
 \alias{infix-package}
-\title{Basic infix binary operators}
+\title{Basic Infix Binary Operators}
 \description{
 Contains a number of infix binary operators that may be useful
     in day to day practices.

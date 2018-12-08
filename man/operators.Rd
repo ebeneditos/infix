@@ -8,9 +8,9 @@ Common Infix Operators
 }
 \section{Infix Operators}{
  \describe{
-    \item{\code{\link{paste}}}{Concatenate Strings (see \code{?"\%+\%"}).}
+    \item{\code{\link{paste0}}}{Concatenate Strings (see \code{?"\%+\%"}).}
     \item{\code{\link{file.path}}}{Construct Path to File (see \code{?"\%//\%"}).}
-    \item{\code{\link{unmatch}}}{Value (Non) Matching (see \code{?"\%!in\%"}).}
+    \item{\code{\link{nomatch}}}{Value (non) Matching (see \code{?"\%!in\%"}).}
     \item{\code{\link{nil}}}{Default value for \code{NULL} (see \code{?"\%||\%"}).}
 }
 }

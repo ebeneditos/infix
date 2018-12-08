@@ -1,6 +1,6 @@
 Package: infix
 Type: Package
-Title: Basic infix binary operators
+Title: Basic Infix Binary Operators
 Version: 0.1.0
 Authors@R: person("Ernest", "Benedito", role = c("aut", "cre"), email = "ebeneditos@gmail.com")
 Description: Contains a number of infix binary operators that may be useful in day to day practices.

@@ -1,7 +1,7 @@
 
 context("operators")
 
-test_that("paste", {
+test_that("paste0", {
   
   expect_equal("01" %+% "jan" %+% "1970", "01jan1970")
 
@@ -13,7 +13,7 @@ test_that("file.path", {
   
 })
 
-test_that("unmatch", {
+test_that("nomatch", {
   
   expect_true(4 %!in% 1:3)
   

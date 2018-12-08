@@ -1,8 +1,8 @@
 # infix
 
-> Basic infix binary operators
+> Basic Infix Binary Operators
 
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![CRAN](http://www.r-pkg.org/badges/version/infix)](https://cran.r-project.org/package=infix)
 [![Travis CI Status](https://travis-ci.org/ebeneditos/infix.svg?branch=master)](https://travis-ci.org/ebeneditos/infix)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/ebeneditos/infix?branch=master&svg=true)](https://ci.appveyor.com/project/ebeneditos/infix)
 [![Codecov](https://codecov.io/gh/ebeneditos/infix/branch/master/graphs/badge.svg?branch=master)](https://codecov.io/gh/ebeneditos/infix)
@@ -11,7 +11,13 @@ Contains a number of infix binary operators that may be useful in day to day pra
 
 ## Installation
 
-You can install the development version from GitHub:
+You can install `infix` from CRAN:
+
+``` r
+install.packages("infix")
+```
+
+Or the development version from GitHub:
 
 ``` r
 # install.packages("devtools")
@@ -40,7 +46,7 @@ print(foo) # "foo bar"
 # file.path (%//%)
 "home" %//% "dir" # returns "home/dir"
 
-# unmatch (%!in%)
+# no match (%!in%)
 4 %!in% 1:3 # returns TRUE
 
 # nil (%||%)
