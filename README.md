@@ -58,7 +58,6 @@ NULL %||% 2 # returns 2
 # functions logic (%&%, %|% and %xor%)
 is.null.na <- is.null %|% is.na
 all(is.null.na(NA), is.null.na(NULL)) # returns TRUE
-
-# Also 'magrittr' pipe-operators are imported
-iris %>% head
 ```
+
+Also, `magrittr` pipe-operators (such as `%>%`) are imported.
