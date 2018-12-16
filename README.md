@@ -26,6 +26,8 @@ devtools::install_github("ebeneditos/infix")
 
 ## Usage
 
+You can find a full list of operators running `?infix`, but here there are a few examples:
+
 ```r
 library(infix)
 
@@ -46,7 +48,7 @@ print(foo) # "foo bar"
 # file.path (%//%)
 "home" %//% "dir" # returns "home/dir"
 
-# no match (%!in%)
+# nomatch (%!in%)
 4 %!in% 1:3 # returns TRUE
 
 # nil (%||%)

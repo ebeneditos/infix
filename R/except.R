@@ -9,12 +9,16 @@
 #'     and if it raises an error then evaluates a second expression.
 #'
 #' @details \code{tryExcept} is a wrapper around \code{\link[base]{tryCatch}},
-#'     but it allows you to run a whole expression (\code{except}) when an error occurs to
-#'     the first expression argument (\code{expr}). Note that, if \code{expr} raises
+#'     but it allows you to evaluate an expression \code{except} when an error occurs to
+#'     the first expression argument \code{expr}. Note that, if \code{expr} raises
 #'     an error, the code evaluated before the error will be in use.
-#' @param expr expression to be evaluated.
-#' @param except expression to be evaluated if \code{expr} raises an error.
-#' @examples \dontrun{
+#' @param expr Expression to be evaluated.
+#' @param except Expression to be evaluated if \code{expr} raises an error. By default it is
+#'     an empty expression.
+#' @param error Handler function for an \code{error} condition occurred during the evaluation
+#'     of \code{expr}. It's output is not used, as the output in case of an error is the
+#'     evaluation of \code{except}. By default it is an empty function.
+#' @examples
 #' # No errors are raised
 #' tryExcept(stop())
 #'
@@ -45,14 +49,13 @@
 #'   foo <- "foo bar"
 #' }
 #' print(foo) # "foo bar"
-#' }
 #' @export
-tryExcept <- function (expr, except = {})
+tryExcept <- function(expr, except = {}, error = function(e){})
 {
-  tryCatch(return(expr), error = function(e){})
+  tryCatch(return(expr), error = error)
   invisible(except)
 }
 
 #' @rdname except
 #' @export
-`%except%` <- tryExcept
+`%except%` <- function(expr, except) tryExcept(expr, except)
