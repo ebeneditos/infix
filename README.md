@@ -3,6 +3,7 @@
 > Basic Infix Binary Operators
 
 [![CRAN](http://www.r-pkg.org/badges/version/infix)](https://cran.r-project.org/package=infix)
+[![Downloads](https://cranlogs.r-pkg.org/badges/infix)](https://www.r-pkg.org/pkg/infix)
 [![Travis CI Status](https://travis-ci.org/ebeneditos/infix.svg?branch=master)](https://travis-ci.org/ebeneditos/infix)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/ebeneditos/infix?branch=master&svg=true)](https://ci.appveyor.com/project/ebeneditos/infix)
 [![Codecov](https://codecov.io/gh/ebeneditos/infix/branch/master/graphs/badge.svg?branch=master)](https://codecov.io/gh/ebeneditos/infix)
