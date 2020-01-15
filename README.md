@@ -7,6 +7,7 @@
 [![Travis CI Status](https://travis-ci.org/ebeneditos/infix.svg?branch=master)](https://travis-ci.org/ebeneditos/infix)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/ebeneditos/infix?branch=master&svg=true)](https://ci.appveyor.com/project/ebeneditos/infix)
 [![Codecov](https://codecov.io/gh/ebeneditos/infix/branch/master/graphs/badge.svg?branch=master)](https://codecov.io/gh/ebeneditos/infix)
+[![License](https://img.shields.io/cran/l/infix.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 Contains a number of infix binary operators that may be useful in day to day practices.
 
